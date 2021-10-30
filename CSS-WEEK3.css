@@ -1,0 +1,75 @@
+body {
+    font-family:'Roboto',sans-serif ;
+}
+.topic h2 {
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 15px;
+    padding-left: 15px;
+    /* background-color: green; */
+    color: #4285f4;
+    border-bottom: 1px solid #000;
+}
+.topic h2:hover {
+    box-shadow: 3px 3px 3px 0px #d2d2d2;
+    cursor: pointer;
+}
+.point-1 {
+    float: right;
+    font-size: 30px;
+    line-height: 6px;
+    /* background-color: #999999; */
+    height: 34px;
+    width: 34px;
+    /* border-radius: 25px; */
+}
+.point-2 {
+/* border: 1px solid ; */
+   float: right;
+   font-size: 20px;
+   line-height: 6px;
+   height: 20px;
+   width: 20px;
+   text-align: center;
+   opacity: 0.3;
+}
+.topic ol li:hover .point-2{
+    opacity: 1.5;
+}
+.topic ol {
+    padding: 0;
+    margin: 0;
+}
+.topic ol li {
+    font-size: 11px;
+    list-style: none;
+    border-bottom: 1px solid  #4285f4 ;
+    padding: 6px 18px;
+    padding-left: 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    
+}
+.topic ol li img {
+    /* border: 1px solid #4285f4; */
+    background-color: #4285f4;
+    border-radius: 100%;
+    padding: 2.5px ;
+    width: 22px;
+}
+.topic ol li span {
+    padding: 9px;
+}
+.topic ol li:hover {
+    box-shadow: 3px 3px 3px 0px #d2d2d2;
+    border-radius: 3px;
+    cursor:pointer;
+
+}
+.disable {
+    background-color: #c5c2c2 !important;
+}
+.date {
+    float: right ;
+    
+}
