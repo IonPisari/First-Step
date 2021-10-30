@@ -1,0 +1,160 @@
+/* add some pretty fonts */
+body {
+    background-color: #333;
+    background-color: #dbceb0;
+}
+.google_logo {
+    text-align: center;
+    margin: 50px;
+}
+form {
+    /* border: 1px dotted white; */
+    
+    /* center text horizontale */
+    text-align: center;
+    padding: 5px;
+}
+form input {
+    width: 400px;
+    padding: 10px 40px;
+    margin-bottom: 30px;
+    border-radius: 40px;
+    border: 1px solid white;
+    /* 2 */
+    /* css multiple  background */
+    background-image: url(images/search.svg),url(images/microfon.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center, 446px center;
+    background-color: #fff;
+    box-shadow: 1px 2px 20px 1px #d2d2d2;
+    /* box shodow addd  +*/
+    /* modifay the border + */
+    /* optional-another way bg position : hint: negative -*/
+    outline: none; 
+
+}
+form input:focus {
+    border-radius: 10px 10px 0 0;
+}
+form ul{
+    list-style: none;
+    text-align: left;
+    padding:0;
+    background-color: #fff;
+    width: 482px;
+    box-shadow: 1px 2px 20px 1px #d2d2d2;
+    /* horizontal center a BLOCK */
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+    /* hide the element COMPLETELY */
+    display: none;
+    margin-top: -30px;
+
+}
+/* + inseamna atunci (si citim selectoru de la stinga) */
+form input:focus+ul {
+    display: block;
+}
+form ul li {
+    padding: 10px 40px;
+    /* HW: mouse hover -> gray bg-color 
+       each <li> add <button> -add X icon
+       button -->hover ,bg-color
+    */
+    background-image: 
+    /* linear-gradient(#f9f4f494,#f4f4f594),    */
+    /* sa facem transparenta  la iconite cu ceasuri + */
+    url(https://www.google.com/images/searchbox/desktop_searchbox_sprites318_hr.webp);
+    /* url(images/Clock-Back-icon.png); */
+    background-repeat: no-repeat;
+    background-size: 28px;
+    background-position: 10px center;
+}
+form ul li:hover {
+    background-color: #d2d2d2;
+    cursor: pointer;
+}
+.delete {
+    background-color: #d2d2d2;
+    border: none;
+    float: right;
+    opacity: 0.0;
+}
+form ul li:hover .delete {
+    background-color:#d2d2d2;
+    opacity: 1.0;
+    cursor:pointer,black;
+    transition: 0.5s;
+}
+.done-delete {
+    text-decoration: none;
+    color: rgb(136, 133, 133);
+}
+.done-delete:hover {
+    color:red;
+}
+/* .delete:hover { 
+    background-color: #d2d2d2;
+    opacity: 1.0;
+}*/
+/*  picto gram de pe google  cu inspect pe bara google  si facem refresh apoi la img 
+facem iar innspect si apasam pe bara si o sa apara iconitele + */
+
+/* form button {
+    border: 1px solid white;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+} 
+*/
+/* start tab  */
+.tabs {
+    /* border:1px solid black; */
+    list-style: none;
+    padding: 15px;
+    width: 700px;
+    text-align: center;
+    margin: auto;
+}
+.tabs-item {
+    /* border:1px solid #d9d9d9; */
+    border-radius: 5px;
+    display: inline-block;
+    padding: 20px 10px;
+    margin: 5px;
+    text-align: center;
+    transition: 0.25s;
+
+}
+.tabs-item:hover {
+    background-color: #999;
+}
+.tabs-img {
+    margin:0px;
+}
+.tabs-link {
+    text-decoration: none;
+    color: #fff;
+}
+.tabs-option {
+    font-size: 30px;
+    line-height: 6px;
+    background-color: #999999;
+    height: 34px;
+    width: 34px;
+    border-radius: 25px;
+    /* new  */
+    opacity: 0.0;
+    transition: 0.25s;
+    transform: translateY(-90px) translateX(70px);
+}
+.tabs-option:hover {
+    opacity: 1.0;
+}
+
+
+/* finish tab */
